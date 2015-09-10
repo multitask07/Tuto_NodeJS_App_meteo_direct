@@ -1,0 +1,42 @@
+{
+    "coord":{
+        "lon":4.42,
+        "lat":44.91
+        },
+    "weather":[
+        {
+       "id":803,
+        "main":"Clouds",
+        "description":"broken clouds",
+        "icon":"04d"
+        }
+    ],
+    "base":"cmc stations",
+    "main":{
+        "temp":290.546,
+        "pressure":974.48,
+        "humidity":68,
+        "temp_min":290.546,
+        "temp_max":290.546,
+        "sea_level":1030.02,
+        "grnd_level":974.48
+    },
+    "wind":{
+        "speed":1.56,
+        "deg":74.0024
+    },
+    "clouds":{
+        "all":68
+    },
+    "dt":1441873427,
+
+    "sys":{
+        "message":0.0074,
+        "country":"FR",
+        "sunrise":1441862097,
+        "sunset":1441908170
+    },
+    "id":3004609,
+    "name":"Le Cheylard",
+    "cod":200
+}

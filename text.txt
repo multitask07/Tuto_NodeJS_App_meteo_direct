@@ -1,0 +1,71 @@
+	
+<html>
+	<head>
+	</head>
+	<body>
+		<h1>Units format
+		Description:</h1>
+
+		Standard, metric, and imperial units are available.
+
+		Parameters:
+
+		units metric, imperial. When you do not use units parameter, format is Standard by default.
+
+		Temperature is available in Fahrenheit, Celsius and Kelvin units.
+
+		For temperature in Fahrenheit use units=imperial
+		For temperature in Celsius use units=metric
+		Temperature in Kelvin is used by default, no need to use units parameter in API call
+		List of all API parameters with units openweathermap.org/weather-data
+		Examples of API calls:
+
+		standard api.openweathermap.org/data/2.5/find?q=London
+
+		metric api.openweathermap.org/data/2.5/find?q=London&units=metric
+
+		imperial api.openweathermap.org/data/2.5/find?q=London&units=imperial
+
+		<h1>Multilingual support
+		Description:</h1>
+
+		You can use lang parameter to get the output in your language. We support the following languages that you can use with the corresponded lang values: English - en, Russian - ru, Italian - it, Spanish - es (or sp), Ukrainian - uk (or ua), German - de, Portuguese - pt, Romanian - ro, Polish - pl, Finnish - fi, Dutch - nl, French - fr, Bulgarian - bg, Swedish - sv (or se), Chinese Traditional - zh_tw, Chinese Simplified - zh (or zh_cn), Turkish - tr, Croatian - hr, Catalan - ca 
+		API call:
+
+		http://api.openweathermap.org/data/2.5/forecast/daily?id=524901&lang={lang}
+		Parameters:
+
+		lang language code
+		Examples of API calls:
+
+		http://api.openweathermap.org/data/2.5/forecast/daily?id=524901&lang=zh_cn
+		Call back function for JavaScript code
+		Description:
+
+		To use JavaScript code you can transfer callback functionName to JSONP callback. 
+		Examples of API calls:
+
+		api.openweathermap.org/data/2.5/weather?q=London,uk&callback=test
+		Call current weather data for one location
+		By city name
+		By city ID
+		By geographic coordinates
+		By ZIP code
+		Call current weather data for several cities
+		Cities within a rectangle zone
+		Cities in cycle
+		Call for several city IDs
+		Bulk downloading
+		Parameters of API respond
+		JSON
+		XML
+		List of condition codes
+		Min/max temperature in current weather API and forecast API
+		Other features
+		Format
+		Search accuracy
+		Units format
+		Multilingual support
+		Call back function for JavaScript code
+	</body>
+</html>
