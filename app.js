@@ -12,8 +12,8 @@ var request = http.get("http://api.openweathermap.org/data/2.5/weather?zip="+ vi
         body += chunk; //incremente le préfixe body à nos données valides 
      });
 // détection de la fin des instructions {fin du fichier} JSON ->end 
-     reponse.on('end', function () { 
+     reponse.on('end', function () {
         var data_meteorologique = JSON.parse(body); //traduction de la variable body en fichier Json, & enregistrement de celle-ci dans une nouvelle variable type 'objet' ->data_meteorologique
-        console.log(data_meteorologique); // affiche sur notre console les données réunis valide précédés du préfixe body! de notre variable 'body'
+        console.log(data_meteorologique.main.temp); // affiche sur notre console la valeur donée par notre fichier Json ici la temperature en farenight {main.temp}
      });
-});
+});  //fin get
