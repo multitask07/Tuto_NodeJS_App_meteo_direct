@@ -5,7 +5,6 @@ var ville_zip = "07320,fr"; //attibut une adresse à notre variable 'ville_zip'
 
 //******************crétion de nos fonctions /objets***************
 function printMessage(ville_zip, ville_select, temperature, pression){ //fonction d'affichage des valeurs qui valeurs qui suivent
-    //console.log(main.statusCode);
     console.log("Au code postal "+ville_zip + " à "+ville_select +", la temperature est de " +(temperature-273.15).toFixed(2)+ "°C et la pression est de "+ pression +" hpascals"); // toFixed ->arrondit à 2 chiffres après la virgule
 }
 
@@ -33,7 +32,8 @@ var request = http.get("http://api.openweathermap.org/data/2.5/weather?zip="+ vi
                 console.error(error.message);
                 }
         }else{
-          printError({ message: "erreur,impossible de recuperer les informations"});  //utilisation de la fonction printError()
+          printError({ message: "erreur,impossible de recuperer les informations"});  //utilisation de la fonction printError()avec notre attribut message:"erreu***"
         }
      });
+request.on('error', printError);   //si l'api renvoi une erreur, on request celle-ci {grace au code donnée par le site"nodejs.org", et les fonctions http, et notre fonction(printError) va l'afficher
 });  //fin get
